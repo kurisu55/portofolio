@@ -1,1 +1,39 @@
+/* IMPORT TAILWIND CSS */
 @import "tailwindcss";
+
+/* Theme */
+@theme {
+    --color-sky-300: oklch(0.828 0.111 230.318);
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* ===================== */
+/* === CUSTOM DESIGN === */
+/* ===================== */
+aside>nav {
+    position: fixed;
+}
+
+.sidebar>a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px;
+}
+
+.button-menu {
+    content-visibility: hidden;
+}
+
+@media screen and (max-width :500px) {
+    .button-menu {
+        content-visibility: visible;
+    }
+}

@@ -5,13 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio</title>
-  <link href="src/css/style.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/fontawesome.min.css">
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="font-sans">
+  <!-- Sidebar -->
+  <aside class="w-52">
+    <nav class="sidebar w-52 h-full bg-white text-center">
+      <ul class="">
+        <!-- Profile Image -->
+        <img class="inline mt-5" id="profile_image" src="assets/img/self-img.png" alt="" width="150" height="150">
+        <li><a href="#home" class="block w-full bg-white hover:bg-black hover:text-white py-2 mt-1">Home</a></li>
+        <li><a href="#about" class="block w-full bg-white hover:bg-black hover:text-white py-2">About</a></li>
+        <li><a href="#portofolio" class="block w-full bg-white hover:bg-black hover:text-white py-2">Portofolio</a></li>
+        <li><a href="#contact" class="block w-full bg-white hover:bg-black hover:text-white py-2">Contact</a></li>
+        <div class="mt-32">
+          <button class="bg-sky-300 p-2 rounded-2xl">Download CV</button>
+        </div>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="ml-10 content">
+    <!-- Home -->
+    <section id="home">
+      <h1 class="text-4xl font-bold">Home</h1>
+      <hr class="bg-black w-16">
+      <p>gw</p>
+    </section>
+  </main>
+
+  <script src="assets/fontawesome-free-6.7.2-web/js/all.min.js"></script>
+  <script src="assets/fontawesome-free-6.7.2-web/js/fontawesome.min.js"></script>
 </body>
 
 </html>
