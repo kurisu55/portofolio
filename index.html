@@ -1,47 +1,152 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio</title>
+
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/css/custom.css">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/all.min.css">
-  <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/fontawesome.min.css">
 </head>
 
 <body class="font-sans">
-  <!-- Sidebar -->
-  <aside class="w-52">
-    <nav class="sidebar w-52 h-full bg-white text-center">
-      <ul class="">
-        <!-- Profile Image -->
-        <img class="inline mt-5" id="profile_image" src="assets/img/self-img.png" alt="" width="150" height="150">
-        <li><a href="#home" class="block w-full bg-white hover:bg-black hover:text-white py-2 mt-1">Home</a></li>
-        <li><a href="#about" class="block w-full bg-white hover:bg-black hover:text-white py-2">About</a></li>
-        <li><a href="#portofolio" class="block w-full bg-white hover:bg-black hover:text-white py-2">Portofolio</a></li>
-        <li><a href="#contact" class="block w-full bg-white hover:bg-black hover:text-white py-2">Contact</a></li>
-        <div class="mt-32">
-          <button class="bg-sky-300 p-2 rounded-2xl">Download CV</button>
+  <div class="w-full container">
+    <!-- Sidebar -->
+    <aside class="w-60 fixed" id="sidebar">
+      <nav class="sidebar bg-white text-center">
+        <ul class="inline">
+          <!-- Profile Image -->
+          <img class="inline mt-5 mb-10 rounded-full border-1" id="profile_image" src="assets/img/self-img.png" alt=""
+            width="150" height="150">
+          <!-- Side Menu -->
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#home">Home</a>
+          </li>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#about">About</a></li>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#portofolio">Portofolio</a>
+          </li>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mt-5 items-center">
+          <button class="bg-sky-300 hover:bg-sky-800 hover:text-white p-2 rounded-md" id="buttonCV"><i
+              class="fa-solid fa-eye mr-1.5"></i> Preview CV</button>
+          <ul class="relative w-32 mt-1 left-8 hidden" id="menuCV">
+            <li class="border py-1 bg-white" title="Role Programmer"><a href="assets/file/CV.pdf" target="_blank"><i
+                  class="fa-solid fa-file"></i>
+                Programmer</a></li>
+            <li class="border py-1 bg-white" title="Role Data Analyst"><a href="#file"><i class="fa-solid fa-file"></i>
+                Data Analyst</a></li>
+            <li class="border py-1 bg-white" title="Role Admin Data"><a href="#file"><i class="fa-solid fa-file"></i>
+                Admin Data</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+    </aside>
+
+
+    <header class="fixed h-10 top-0 w-full hidden bg-white z-10" id="navbar">
+      <ul>
+        <li class="p-2 hover:bg-black hover:text-white"><a href="#home" class="">Home</a></li>
+        <li class="p-2 hover:bg-black hover:text-white"><a href="#about">About</a></li>
+        <li class="p-2 hover:bg-black hover:text-white"><a href="#portofolio">Portofolio</a></li>
+        <li class="p-2 hover:bg-black hover:text-white"><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </aside>
+      <div class="float-right top-0">
+        <button type="button" class="dark border rounded-md p-1">Dark Mode</button>
+      </div>
+    </header>
 
-  <!-- Main -->
-  <main class="ml-10 content">
-    <!-- Home -->
-    <section id="home">
-      <h1 class="text-4xl font-bold">Home</h1>
-      <hr class="bg-black w-16">
-      <p>gw</p>
-    </section>
-  </main>
+    <!-- Content -->
+    <div class="relative h-full left-60 bg-white dark:bg-black p-1.5" id="content">
+      <!-- Home -->
+      <section class="mb-10 border p-1" id="home">
+        <h1 class="text-4xl font-bold">Home</h1>
+        <hr class="bg-black w-52 mb-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat qui odit molestias eos est inventore dicta
+        iusto
+        quam, excepturi corporis tenetur, maxime error perspiciatis magnam neque, repellendus totam laborum magni. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque quod cum aliquid commodi aperiam nemo porro
+        sapiente, vitae dolorum. Labore qui nobis consequuntur amet distinctio velit tempora necessitatibus corrupti?
+      </section>
+      <!-- About -->
+      <section class="mb-10" id="about">
+        <h1 class="text-4xl font-bold">About</h1>
+        <hr class="bg-black w-52 mb-8">
 
+      </section>
+      <!-- Portofolio -->
+      <section class="mb-10" id="portofolio">
+        <h1 class="text-4xl font-bold">Portofolio</h1>
+        <hr class="bg-black w-52 mb-8">
+      </section>
+      <!-- Contact -->
+      <section>
+        <section class="mb-10" id="contact">
+          <h1 class="text-4xl font-bold">Contact</h1>
+          <hr class="bg-black w-52 mb-8">
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <!-- Dropdown CV -->
+  <script>
+    const button = document.getElementById("buttonCV");
+    const menu = document.getElementById("menuCV");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!button.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+
+  <!-- Visible Header Element -->
+  <script>
+    function visibleHeader() {
+      let content = document.getElementById("content");
+
+      if (window.innerWidth < 600) {
+        content.style.top = "40px";
+      } else {
+        content.style.top = "0px";
+      }
+    }
+    // Cek saat halaman dimuat
+    visibleHeader();
+    // Cek saat layar di-resize
+    window.addEventListener("resize", visibleHeader);
+  </script>
+
+  <!-- Dark Light Theme -->
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    document.documentElement.classList.toggle(
+      "dark",
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+    );
+    // Whenever the user explicitly chooses light mode
+    localStorage.theme = "light";
+    // Whenever the user explicitly chooses dark mode
+    localStorage.theme = "dark";
+    // Whenever the user explicitly chooses to respect the OS preference
+    localStorage.removeItem("theme");
+  </script>
+
+  <!-- Fontawesome JS -->
   <script src="assets/fontawesome-free-6.7.2-web/js/all.min.js"></script>
-  <script src="assets/fontawesome-free-6.7.2-web/js/fontawesome.min.js"></script>
 </body>
 
 </html>
