@@ -1,0 +1,32 @@
+/* ===================== */
+/* === CUSTOM DESIGN === */
+/* ===================== */
+
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    header {
+        display: block;
+        left: 0%;
+    }
+
+    header>ul {
+        list-style: none;
+        display: flex;
+    }
+
+    div#content {
+        top: 50%;
+        color: brown;
+        left: 0%;
+        /* content-visibility: hidden; */
+    }
+}
+
+div#content {}
