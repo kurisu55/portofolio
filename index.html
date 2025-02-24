@@ -26,91 +26,116 @@
         <li class="p-2 hover:bg-black hover:text-white"><a href="#portofolio">Portofolio</a></li>
         <li class="p-2 hover:bg-black hover:text-white"><a href="#contact">Contact</a></li>
         <li class="p-2 hover:bg-black hover:text-white">Preview CV</li>
+        <div class="right-0 top-0 inline">
+          <button type="button" class="dark border rounded-md p-1">Dark Mode</button>
+        </div>
       </ul>
-      <div class="float-right top-0">
-        <button type="button" class="dark border rounded-md p-1">Dark Mode</button>
-      </div>
     </header>
 
     <!-- Sidebar -->
-    <aside class="w-60 fixed" id="sidebar">
+    <aside class="w-60 left-0 fixed" id="sidebar">
       <nav class="sidebar bg-white text-center">
-        <ul class="inline">
+        <ul class="list-none p-0">
           <!-- Profile Image -->
           <img class="inline mt-5 mb-10 rounded-full border-1" id="profile_image" src="assets/img/self-img.png" alt=""
             width="150" height="150">
           <!-- Side Menu -->
-          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#home">Home</a>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2">
+            <a href="#home" class="inline-block">Home</a>
           </li>
-          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#about">About</a></li>
-          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#portofolio">Portofolio</a>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#about" id="listMenu">About</a></li>
+          <li class="w-full bg-white hover:bg-black hover:text-white py-2" id="listMenu"><a
+              href="#portofolio">Portofolio</a>
           </li>
           <li class="w-full bg-white hover:bg-black hover:text-white py-2"><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mt-5 items-center">
-          <button class="bg-sky-300 hover:bg-sky-800 hover:text-white p-2 rounded-md" id="buttonCV"><i
-              class="fa-solid fa-eye mr-1.5"></i> Preview CV</button>
-          <ul class="relative w-32 mt-1 left-8 hidden" id="menuCV">
-            <li class="border py-1 bg-white" title="Role Programmer"><a href="assets/file/CV.pdf" target="_blank"><i
-                  class="fa-solid fa-file"></i>
-                Programmer</a></li>
-            <li class="border py-1 bg-white" title="Role Data Analyst"><a href="#file"><i class="fa-solid fa-file"></i>
-                Data Analyst</a></li>
-            <li class="border py-1 bg-white" title="Role Admin Data"><a href="#file"><i class="fa-solid fa-file"></i>
-                Admin Data</a>
-            </li>
-          </ul>
+
+        <div class="dropdown relative inline-block">
+          <button class="mt-5 p-2 rounded-sm bg-sky-300 hover:bg-sky-800 hover:text-white" id="dropdown-btn"><i
+              class="fa-solid fa-eye"></i> Preview
+            CV</button>
+          <div class="p-1 mt-0.5 hidden" id="dropdown-menu">
+            <a href="" class="block px-1 py-2 hover:text-white hover:bg-black"><i class="fa-solid fa-file"></i>
+              Programmer</a>
+            <a href="" class="block px-1 py-2 hover:text-white hover:bg-black"><i class="fa-solid fa-file"></i> Data
+              Analyst</a>
+          </div>
         </div>
       </nav>
     </aside>
 
     <!-- Content -->
-    <div class="relative h-full left-60 bg-white dark:bg-black p-1.5" id="content">
+    <div class="relative h-fit left-60 bg-white dark:bg-black" id="content">
       <!-- Home -->
-      <section class="mb-10 border p-1" id="home">
-        <h1 class="text-5xl font-bold">Home</h1>
-        <hr class="bg-black w-52 mb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat qui odit molestias eos est inventore dicta
-        iusto
-        quam, excepturi corporis tenetur, maxime error perspiciatis magnam neque, repellendus totam laborum magni. Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque quod cum aliquid commodi aperiam nemo porro
-        sapiente, vitae dolorum. Labore qui nobis consequuntur amet distinctio velit tempora necessitatibus corrupti?
+      <section class="bg-linear-60 from-sky-300 to-sky-800" id="home">
+        <div class="relative w-screen h-screen">
+          <img src="assets/img/freepik__expand__47977.png"
+            alt="https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?uid=R10942123&ga=GA1.1.1894228725.1732710797&semt=ais_hybrid"
+            alt="" class="w-full h-full object-cover">
+          <div class="absolute inset-0 flex bg-black/60 rounded-lg">
+            <h1 class="mt-10 text-6xl font-serif text-white">Hi,</h1>
+            <p class="text-white">Saya seorang lulusan Strata 1 Sistem Informasi</p>
+          </div>
+        </div>
       </section>
       <!-- About -->
-      <section class="mb-10" id="about">
-        <h1 class="text-5xl font-bold">About</h1>
-        <hr class="bg-black w-52 mb-8">
-
+      <section class="w-full mb-10 bg-emerald-300" id="about">
+        <div class="break-all w-fit h-fit">
+          <h1 class="text-5xl font-bold">About</h1>
+          <hr class="bg-black w-full">
+        </div>
+        <div class="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat qui odit molestias eos est inventore
+            dicta
+            iusto
+            quam, excepturi corporis tenetur, maxime error perspiciatis magnam neque, repellendus totam laborum magni.
+            Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque quod cum aliquid commodi aperiam nemo
+            porro
+            sapiente, vitae dolorum. Labore qui nobis consequuntur amet distinctio velit tempora necessitatibus
+            corrupti?
+          </p>
+        </div>
       </section>
       <!-- Portofolio -->
       <section class="mb-10" id="portofolio">
-        <h1 class="text-5xl font-bold">Portofolio</h1>
-        <hr class="bg-black w-52 mb-8">
+        <div class="w-56 mb-8">
+          <h1 class="text-5xl font-bold">Portofolio</h1>
+          <hr class="bg-black w-full">
+        </div>
       </section>
       <!-- Contact -->
       <section>
         <section class="mb-10" id="contact">
-          <h1 class="text-5xl font-bold">Contact</h1>
-          <hr class="bg-black w-52 mb-8">
+          <div class="w-44 mb-8">
+            <h1 class="text-5xl font-bold">Contact</h1>
+            <hr class="bg-black w-full">
+          </div>
         </section>
       </section>
     </div>
   </div>
 
+  <!-- Navigasi Link -->
+  <script>
+    const navMenu = document.getElementById('')
+  </script>
+
   <!-- Dropdown CV -->
   <script>
-    const button = document.getElementById("buttonCV");
-    const menu = document.getElementById("menuCV");
 
-    button.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
+    const dropdownbtn = document.getElementById('dropdown-btn');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    dropdownbtn.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
+    })
 
     document.addEventListener("click", (event) => {
-      if (!button.contains(event.target) && !menu.contains(event.target)) {
-        menu.classList.add("hidden");
+      if (!dropdownbtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.add("hidden");
       }
-    });
+    })
   </script>
 
   <!-- Visible Header Element -->
@@ -124,7 +149,6 @@
         content.style.top = "0px";
       }
     }
-    // Cek saat halaman dimuat
     visibleHeader();
     // Cek saat layar di-resize
     window.addEventListener("resize", visibleHeader);
