@@ -8,7 +8,7 @@
     "dev": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kristovel Adi Sucipto",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.6",
