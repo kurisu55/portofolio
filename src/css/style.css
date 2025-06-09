@@ -10,8 +10,81 @@ h3,
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Siapkan pseudo-element untuk underline */
+.nav-link {
+    position: relative;
+    color: white !important;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link.active {
+    color: #ffc107 !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffc107;
+    /* kuning cerah */
+    transition: all 0.3s ease;
+}
+
+/* Saat hover, perluas underline */
+.nav-link:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* Opsional: warnai teks juga saat hover */
+.nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+}
+
+/* Untuk Icon */
+.nav-icon {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: color 0.3s ease;
+}
+
+.nav-icon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #ffc107;
+    transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #ffc107;
+    transform: translateY(-2px);
+}
+
 .hero-section {
-    background-image: url('../../assets/img/freepik__expand__47977.png');
+    position: relative;
+    background-image: url('../../assets/img/2102.i518.009_sky_cloud_evening_illustration.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,4 +95,20 @@ h3,
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding-top: 80px;
+}
+
+/* Source img Freepik */
+.credit-text {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.credit-text a {
+    color: inherit;
+    text-decoration: none;
 }
