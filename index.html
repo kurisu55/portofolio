@@ -207,25 +207,32 @@
                     <h3 class="text-center mb-5">Form Chat</h3>
                     <!-- Form Chat -->
                     <form class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="validationCustom01" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="validationCustom01" name="email" required>
-                            <!-- <div class="valid-feedback">
-                                Looks good!
-                            </div> -->
+                        <div class="mb-3 row">
+                            <label for="validationCustom01" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="validationCustom01" name="email" required>
+                                <!-- <div class="valid-feedback">
+                                    Looks good!
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="validationCustom02" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="validationCustom02" name="subjectEmail"
-                                required>
-                            <!-- <div class="valid-feedback">
-                                Looks good!
-                            </div> -->
+                        <div class="mb-3 row">
+                            <label for="validationCustom02" class="col-sm-2 col-form-label">Subject</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="validationCustom02" name="subjectEmail"
+                                    required>
+                                <!-- <div class="valid-feedback">
+                                    Looks good!
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="fillMessage" class="form-label">Message</label>
-                            <textarea class="form-control" id="fillMessage" rows="7" placeholder="Fill Message..."
-                                name="messageChat" required></textarea>
+                        <div class="mb-3 row">
+                            <label for="fillMessage" class="col-sm-2 col-form-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="fillMessage" rows="7" placeholder="Fill Message..."
+                                    name="messageChat" required>
+                                </textarea>
+                            </div>
                         </div>
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-outline-primary">Send <svg
