@@ -18,8 +18,11 @@
             color: white !important;
         }
 
-        section #about>p {
-            text-align: justify;
+        .items-center-hero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .text-justify {
@@ -74,13 +77,30 @@
     <main>
         <!-- 1. About -->
         <section class="hero-section" id="home">
-            <div class="row border d-flex justi">
-                <div class="col col-6 border">
-                    <a href="#about" class="btn btn-outline-warning btn-lg">Read More...</a>
-                </div>
-                <div class="col col-6 border item">
-                    <h5 class="display-6 fw-bold">Download resume</h5>
-                    <a href="" class="btn btn-outline-success" target="_blank">Resume</a>
+            <div class="items-center-hero">
+                <div class="row row-cols-1 row-cols-sm-2">
+                    <div class="col p-5 mb-5 text-center">
+                        <h5 class="display-6 fw-bold">Visit Me</h5>
+                        <a href="#about" class="btn btn-outline-warning">Read More <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                <path fill-rule="evenodd"
+                                    d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            </svg></a>
+                    </div>
+                    <div class="col p-5 text-center">
+                        <h5 class="display-6 fw-bold">Download resume</h5>
+                        <a href="" class="btn btn-outline-success" target="_blank">Resume <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cloud-download" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
+                                <path
+                                    d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z" />
+                            </svg></a>
+                    </div>
                 </div>
             </div>
             <!-- <h4 class="display-3 fw-bold">Kristovel A.S.</h4>
@@ -94,120 +114,118 @@
         <section id="about">
             &nbsp;&nbsp;
             <h1 class="ms-5 mt-5 text-decoration-underline">About</h1>
-            <div class="container">
-                <div class="row mx-5">
-                    <div class="col p-5 border introduction text-wrap">
-                        <div class="row justify-content-center text-center row-cols-1 row-cols-sm-2 row-cols-md-5">
-                            <div class="col">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
-                                    class="bi bi-code-slash" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-                                </svg>
-                                <p class="mt-2">Web Developer</p>
-                            </div>
-                            <div class="col mx-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
-                                    class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                                </svg>
-                                <p class="mt-2">Data Analyst</p>
-                            </div>
-                            <div class="col">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
-                                    class="bi bi-clipboard-fill" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2" />
-                                </svg>
-                                <p class="mt-2">Admin & Data Entry</p>
-                            </div>
+            <div class="row mx-5">
+                <div class="col p-5 border text-wrap">
+                    <div class="row justify-content-center text-center row-cols-1 row-cols-sm-2 row-cols-md-5">
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
+                                class="bi bi-code-slash" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                            </svg>
+                            <p class="mt-2">Web Developer</p>
                         </div>
-                        <div class="text-justify">
-                            <p class="mt-5">
-                                Saya Kristovel Adi Sucipto, Sarjana Komputer jurusan Sistem Informasi lulusan
-                                Universitas
-                                Gunadarma. Saya memiliki kemampuan sebagai Web Developer yaitu PHP programmer,
-                                Javascript,
-                                HTML,
-                                Bootstrap, dan MySQL. Saya memiliki ketertarikkan pada pekerjaan di bidang Data Analyst,
-                                Admin
-                                serta Data
-                                Entry. Kemampuan lainnya yaitu Python, Power BI, dan Microsoft Office.
-                            </p>
-                            <p>
-                                Saya memiliki keinginan belajar yang kuat terhadap ilmu yang baru maupun yang lebih
-                                ter-update.
-                                Ilmu yang sudah saya pelajari saat ini diharapkan dapat membantu serta menciptakan
-                                sebuah
-                                inovasi yang dapat membangun jalannya perusahaan. Saat ini saya sudah membuat beberapa
-                                project
-                                mandiri sebagai bentuk hasil dari pembelajaran. Tidak hanya sampai di situ saja, saya
-                                tetap
-                                melakukan update fitur pada project yang telah saya buat ataupun melakukan clean code.
-                            </p>
-                            <p>
-                                Saya mempersilahkan kepada Hiring Recruitment untuk melihat portofolio saya. Diharapkan
-                                project
-                                yang telah
-                                saya buat menjadi relevan sesuai kebutuhan pencarian recruitment.
-                            </p>
+                        <div class="col mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
+                                class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                            </svg>
+                            <p class="mt-2">Data Analyst</p>
                         </div>
-                        <hr class="mt-5 bg-black">
-                        <p>Softskill: Team Working, Hard Working, Attention to detail.</p>
-                        <div class="container">
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-12">
-                                <div class="col flex-column">
-                                    <!-- PHP -->
-                                    <label>PHP (Entry Level): 8</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 80%"></div>
-                                    </div>
-                                    <!-- Javascript -->
-                                    <label>Javascript (Entry Level): 7</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
-                                    <!-- HTML -->
-                                    <label>HTML: 9</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 90%"></div>
-                                    </div>
-                                    <!-- Bootstrap -->
-                                    <label>Bootstrap (Entry Level): 7</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor"
+                                class="bi bi-clipboard-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2" />
+                            </svg>
+                            <p class="mt-2">Admin & Data Entry</p>
+                        </div>
+                    </div>
+                    <div class="text-justify">
+                        <p class="mt-5">
+                            Saya Kristovel Adi Sucipto, Sarjana Komputer jurusan Sistem Informasi lulusan
+                            Universitas
+                            Gunadarma. Saya memiliki kemampuan sebagai Web Developer yaitu PHP programmer,
+                            Javascript,
+                            HTML,
+                            Bootstrap, dan MySQL. Saya memiliki ketertarikkan pada pekerjaan di bidang Data Analyst,
+                            Admin
+                            serta Data
+                            Entry. Kemampuan lainnya yaitu Python, Power BI, dan Microsoft Office.
+                        </p>
+                        <p>
+                            Saya memiliki keinginan belajar yang kuat terhadap ilmu yang baru maupun yang lebih
+                            ter-update.
+                            Ilmu yang sudah saya pelajari saat ini diharapkan dapat membantu serta menciptakan
+                            sebuah
+                            inovasi yang dapat membangun jalannya perusahaan. Saat ini saya sudah membuat beberapa
+                            project
+                            mandiri sebagai bentuk hasil dari pembelajaran. Tidak hanya sampai di situ saja, saya
+                            tetap
+                            melakukan update fitur pada project yang telah saya buat ataupun melakukan clean code.
+                        </p>
+                        <p>
+                            Saya mempersilahkan kepada Hiring Recruitment untuk melihat portofolio saya. Diharapkan
+                            project
+                            yang telah
+                            saya buat menjadi relevan sesuai kebutuhan pencarian recruitment.
+                        </p>
+                    </div>
+                    <hr class="mt-5 bg-black">
+                    <p class="fw-bolder">Softskill: Team Working, Hard Working, Attention to detail.</p>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-12">
+                            <div class="col flex-column">
+                                <!-- PHP -->
+                                <label>PHP (Entry Level): 8</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
                                 </div>
-                                <div class="col">
-                                    <!-- Python -->
-                                    <label>Python (Entry Level): 6</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 60%"></div>
-                                    </div>
-                                    <!-- Power BI -->
-                                    <label>Power BI: 5</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 50%"></div>
-                                    </div>
-                                    <!-- Ms. Office -->
-                                    <label>Ms. Office: 8</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 80%"></div>
-                                    </div>
-                                    <!-- MySQL -->
-                                    <label>MySQL: 8</label>
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 80%"></div>
-                                    </div>
+                                <!-- Javascript -->
+                                <label>Javascript (Entry Level): 7</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                                <!-- HTML -->
+                                <label>HTML: 9</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                                <!-- Bootstrap -->
+                                <label>Bootstrap (Entry Level): 7</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- Python -->
+                                <label>Python (Entry Level): 6</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                                <!-- Power BI -->
+                                <label>Power BI: 5</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                                <!-- Ms. Office -->
+                                <label>Ms. Office: 8</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                                <!-- MySQL -->
+                                <label>MySQL: 8</label>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
                                 </div>
                             </div>
                         </div>
@@ -260,8 +278,8 @@
                         <div class="mb-3 row">
                             <label for="fillMessage" class="col-sm-2 col-form-label">Message</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="fillMessage" rows="7" name="messageChat" required>
-                                </textarea>
+                                <textarea class="form-control" id="fillMessage" rows="7" name="messageChat"
+                                    required></textarea>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
