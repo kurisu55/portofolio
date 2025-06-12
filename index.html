@@ -370,9 +370,23 @@
 
     <!-- Script ScrollSpy -->
     <script>
+        // Fungsi ubah background navbar saat scroll
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 600) {
+                navbar.classList.remove("bg-transparent");
+                navbar.classList.add("bg-secondary");
+                navbar.classList.add("navbar-dark"); // Agar teks tetap terbaca di background gelap
+            } else {
+                navbar.classList.add("bg-transparent");
+                navbar.classList.remove("bg-secondary");
+                navbar.classList.remove("navbar-dark");
+            }
+        });
+
         const scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '.navbar',
-            offset: 50
+            offset: 600
         });
     </script>
 
