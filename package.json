@@ -9,9 +9,5 @@
   },
   "keywords": [],
   "author": "Kristovel Adi Sucipto",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.6",
-    "bootstrap-icons": "^1.13.1"
-  }
+  "license": "ISC"
 }
