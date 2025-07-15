@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Membuat Landing Page Bagi Web Developer",
+        "platform": "Prakerja - LPK ARUM",
+        "credential": "https://app.karier.mu/sertifikat/cHJvZ3JhbV91c2VyLTEzMDAxMDc1?prakerja",
+        "preview": "https://drive.google.com/file/d/1mv2BcXupMwss6q-AIYeLQb0Quq8OxuNT/view?usp=sharing"
+    },
+    {
+        "id": 2,
+        "title": "Belajar Dasar Pemrograman JavaScript",
+        "platform": "Dicoding",
+        "credential": "https://dicoding.com/certificates/6RPNRMV69X2M",
+        "preview": "https://drive.google.com/file/d/11yVBzoxvyAMM238jo9mN1S-0UEmr6ddV/view?usp=sharing"
+    },
+    {
+        "id": 3,
+        "title": "Belajar Back-End Pemula dengan JavaScript",
+        "platform": "Dicoding",
+        "credential": "https://www.dicoding.com/certificates/JLX1506G5Z72",
+        "preview": "https://drive.google.com/file/d/1yF6d3psf5cT-Eo5Qnsqe03MorFeF_6Mt/view?usp=sharing"
+    },
+    {
+        "id": 4,
+        "title": "Fundamental Data Science Fresh Graduate Academy Digital Talent Scholarship 2025",
+        "platform": "Digitalent",
+        "credential": "#",
+        "preview": "https://drive.google.com/file/d/1S-N94ZumrQM_5iKGpkAbkWv3ShGl87wY/view?usp=sharing"
+    }
+]
