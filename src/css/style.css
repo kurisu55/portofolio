@@ -83,12 +83,53 @@ nav .nav-link:hover {
 }
 
 .hero-section {
+    position: relative;
     background-image: url('../../assets/img/2102.i518.009_sky_cloud_evening_illustration.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    text-align: center;
+    overflow: hidden;
 }
+
+/* Overlay hitam transparan */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Container teks dan tombol */
+.items-center-hero {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Tombol */
+.hero-section .btn {
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(255, 193, 7, 0.6);
+}
+
 
 
 /* Source img Freepik */
