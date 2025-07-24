@@ -2,15 +2,15 @@
     {
         "id": 1,
         "name": "Website E-Learning Programming",
-        "description": "",
-        "img": "",
+        "description": "Website E-Learning memiliki fitur kuis, code editor yang cocok diperlajari untuk mempelajari bahasa dasar pemrograman. <i>Coming soon update<i/>",
+        "img": "./assets/img/portofolio/Web_E-Learning.png",
         "url": "https://github.com/kurisu55/e-learning"
     },
     {
         "id": 2,
         "name": "Website Stok Mobil",
-        "description": "",
-        "img": "",
+        "description": "Website pencatatan mobil masuk dan keluar. <i>Adaptasi skripsi pihak lain</i><br><br>",
+        "img": "./assets/img/portofolio/Web_stokMobil.png",
         "url": "https://github.com/kurisu55/checkstoktrust"
     }
 ]
