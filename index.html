@@ -41,7 +41,7 @@
             resize: none;
         }
 
-        .bg-purple {
+        .bg-custom {
             background-color: #DCC5B2 !important;
         }
 
@@ -106,7 +106,7 @@
                         More About Me
                         <i class="bi bi-chevron-double-down ms-2"></i>
                     </a>
-                    <a href="https://drive.google.com/file/d/1aHbNWCrZkqsMn-ei_nXPOBRA1024Y4T4/view?usp=drive_link"
+                    <a href="https://drive.google.com/file/d/1aAA-v6rfSbJNaQGBXryqPO4UgAscZ7yM/view?usp=sharing"
                         target="_blank" class="btn btn-outline-light shadow-lg px-4 py-2 rounded-pill">
                         Download Resume
                         <i class="bi bi-cloud-download ms-2"></i>
@@ -396,11 +396,11 @@
             const navbar = document.querySelector(".navbar");
             if (window.scrollY > 600) {
                 navbar.classList.remove("bg-transparent");
-                navbar.classList.add("bg-purple");
+                navbar.classList.add("bg-custom");
                 navbar.classList.add("navbar-dark"); // Agar teks tetap terbaca di background gelap
             } else {
                 navbar.classList.add("bg-transparent");
-                navbar.classList.remove("bg-purple");
+                navbar.classList.remove("bg-custom");
                 navbar.classList.remove("navbar-dark");
             }
         });
